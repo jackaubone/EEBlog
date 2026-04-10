@@ -5,18 +5,15 @@ html {
 
 }
 
-/* body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
-} */
-
 body {
   margin: 2rem auto;
   max-width: 48rem;
-  line-height: 1.4;
+  background-color: #e2f6ff;
+}
+
+.content {
+  margin: auto;
+  max-width: 48rem;
   padding: 1rem 1rem 1.6rem;
   background-color: #ffffff;
   box-shadow: 0 0 1rem 0 #bbb;
@@ -34,88 +31,40 @@ h1 {
 
 /* nav styles */
 
-/* nav {
+nav {
   margin: 0;
-  background-color: #53a5d4;
-} */
-
-.menu {
-  background-color: #630000;
-  border-radius: 20px;
-  border: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px 10px;
+  background-color: #53a5d4;  
 }
 
 .nav-links {
-  width: 100%;
-  display: none;
-  margin: 0;
+    margin-left: 0;
+    display: block;
+    width: auto;
+    background-color: #53a5d4;
 }
 
-.nav-links a {
-  display: block;
+.nav-signature {
+  display: inline-block;
+  border-right: 2px solid #421703;
+  padding: 0px 8px 0px 5px;
   text-align: left;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
+  letter-spacing: -1px;
+  font-size: 1rem;
   font-weight: bold;
-  text-transform: uppercase;
+  color: #421703;
+}
+
+  .nav-links a {
+  display: inline-block;
+  padding: 10px 5px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.1rem;
   color: #421703;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #fdb9b9;
-  border-radius: 20px;
+  color: #fdb9b9;
+  font-weight: bold;
 }
-
-:has(.menu[aria-expanded="true"]) .nav-links {
-  display: unset;
-}
-
-/* nav style for non-phone screens. overrides mobile styles above*/
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 0;
-    display: block;
-    position: static;
-    width: auto;
-    background-color: #53a5d4;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 15px;
-  }
-  
-    .menu {
-    display: none;
-  }
-}
-
-
-/* html.dark {
-  background-color: #0d0950;
-  color: #fff;
-}
-
-.dark .menu {
-  background-color: #fff;
-  color: #000;
-}
-
-.dark .nav-links a:hover,
-.dark .nav-links a:focus {
-  color: #0d0950;
-}
-
-.dark .nav-links a {
-  color: #fff;
-}
-
-.dark a {
-  color: #ff9776;
-} */
