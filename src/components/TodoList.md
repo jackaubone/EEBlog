@@ -1,5 +1,6 @@
 Todo: 
 - Blog post section
+- Blog post content-collection?
 - Blog post index page 
 - Resume/About page 
 - ~~Navbar~~ 
@@ -12,3 +13,4 @@ test
 - ~~Global stylesheet~~
 - ~~Global font~~ 
 - General aesthetic direction
+- Include small body padding for mobile screen size
