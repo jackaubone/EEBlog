@@ -1,12 +1,12 @@
 html {
   background-color: #e2f6ff;
   font-family: sans-serif;
-  color: #350049;
+  color: #421703;
 
 }
 
 body {
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 48rem;
   background-color: #e2f6ff;
 }
@@ -17,7 +17,7 @@ body {
   padding: 1rem 1rem 1.6rem;
   background-color: #ffffff;
   box-shadow: 0 0 1rem 0 #bbb;
-  border-radius: 0 0 0.6rem 0.6rem;
+  border-radius: 0 0 0.2rem 0.2rem;
 }
 
 * {
