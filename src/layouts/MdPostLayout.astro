@@ -3,17 +3,10 @@ import BaseLayout from "./BaseLayout.astro"
 const { frontmatter } = Astro.props;
 
 import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
 
-dayjs.extend(utc);
 
-const lastModified = dayjs()
-  .utc(frontmatter.lastModified)
-  .format("h:mma on DD MMMM YYYY");
-
-const universalDate = dayjs(frontmatter.pubDate, "M-D-YYYY")
-    .format("DD MMMM YYYY");
-    // .utc().toISOString();
+const universalDate = dayjs(frontmatter.pubDate)
+    .format("MMMM D, YYYY");
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <small>Written on {universalDate}</small> <br>
@@ -22,6 +15,5 @@ const universalDate = dayjs(frontmatter.pubDate, "M-D-YYYY")
 
     <br><footer>
         <a href="../">Back to all posts</a> <br><br>
-        <small>Last updated at {lastModified} </small>
     </footer>
 </BaseLayout>
