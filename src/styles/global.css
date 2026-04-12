@@ -29,6 +29,12 @@ h1 {
   font-size: 2.2rem;
 }
 
+small {
+  margin: -10px 0px;
+  display: flex;
+  color: #888888;
+  font-size: 0.75rem;
+}
 /* nav styles */
 
 nav {
